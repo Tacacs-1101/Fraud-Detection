@@ -1,6 +1,9 @@
 # Fraud-Detection
 **_A machine learning model to detect the fraudulent transactions_**.
 
+## Overview ##
+This repository contains the detailed analysis on a dataset containing credit card transactions. The target variable has two classes (_Normal and Fraud_). The dataset is challenging because it is highly imbalanced. More than 99% data points belong to _Normal_ class.
+
 ## Download the data ##
 Download the dataset (_csv format_) from [here](https://www.kaggle.com/mlg-ulb/creditcardfraud/data).
 
@@ -19,7 +22,7 @@ This notebook can be devided into the following sections:
 * **_Parameter tuning_**
 
 After initial exploration, the dataset turns out to be highly imbalanced. Normal machine learning algorithms are biased 
-towards the majority class. Resampling technique has been used to handle this problem. New features are generated based on the distribution of variables with in class. The accuracy metric is not useful for imbalanced class, so f1 ( _harmonic mean of precision and recall_ ) and auc ( _area under the roc curve are used to evaluate the model performance_). The usual threshold (_probability = 0.5_) is not used for classification. It has been tuned using cross-validation strategy.
+towards the majority class. Resampling technique has been used to handle this problem. New features are generated based on the distribution of variables with in class. The accuracy metric is not useful for imbalanced class, so f1 ( _harmonic mean of precision and recall_ ) and auc ( _area under the roc curve_) are used to evaluate the model performance. The usual threshold (_probability = 0.5_) is not used for classification. It has been tuned using cross-validation strategy.
 
 
 
